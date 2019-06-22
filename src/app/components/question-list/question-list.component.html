@@ -1,0 +1,16 @@
+<div class="question" *ngFor="let question of questions">
+  <div class="card">
+    <div class="card-header">
+      {{ question.questiontext }}
+      <!-- <p>This the placeholder for the question</p> -->
+    </div>
+    <div class="card-block">
+      <p class="card-text m-3">
+        {{ question.questionanswer }}
+        <!-- This is the placeholder for the answer -->
+      </p>
+    </div>
+  </div>
+  <br>
+</div>
+
