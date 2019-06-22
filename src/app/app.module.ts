@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { QuestionListComponent } from './components/question-list/question-list.component';
+import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { QuestionListComponent } from './components/question-list/question-list.
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
